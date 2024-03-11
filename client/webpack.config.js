@@ -17,14 +17,14 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: './index.html',
-        title: 'J.A.T.E.'
-      }),
+    plugins: [      
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
+      }),
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'J.A.T.E.'
       }),
       new WebpackPwaManifest({
         fingerprints: false,
