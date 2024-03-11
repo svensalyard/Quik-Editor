@@ -2,7 +2,7 @@
 
 ### Description
 
-A quik text editor as a pwa.
+A quik text editor as a pwa. You can use it in browser or as a web app.
 
 ## Table of Contents
 
@@ -14,11 +14,13 @@ A quik text editor as a pwa.
 
 ### Installation
 
-Simply go to [Quik Editor](). Then press the install me button!
+Simply go to [Quik Editor](https://quik-editor.onrender.com/). Then press the install me button!
 
 ### Useage
 
-Go to [Quik Editor]() and type whatever notes you want.
+Go to [Quik Editor](https://quik-editor.onrender.com/) and type whatever notes you want.
+![homepage](./assets/jate1.png)
+![app](./assets/jate2.png)
 
 ### License
 
