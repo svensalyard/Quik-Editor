@@ -18,19 +18,19 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [      
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'QuikEditor'
+      }),      
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
-      new HtmlWebpackPlugin({
-        template: './index.html',
-        title: 'J.A.T.E.'
-      }),
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Just Another Text Editor',
-        short_name: 'J.A.T.E',
+        name: 'Quik Editor',
+        short_name: 'QUIKEDIT',
         description: 'A simple note taking app in a command line/editor style.',
         background_color: '#225ca3',
         theme_color: '#225ca3',
